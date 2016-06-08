@@ -49,6 +49,7 @@ GEM
     multi_json (1.12.1)
     multi_test (0.1.2)
     netrc (0.11.0)
+    rake (11.1.2)
     rest-client (1.8.0)
       http-cookie (>= 1.0.2, < 2.0)
       mime-types (>= 1.16, < 3.0)
@@ -95,5 +96,6 @@ PLATFORMS
 DEPENDENCIES
   calabash-android
   calabash-cucumber
+  rake
   rspec
   xamarin-test-cloud

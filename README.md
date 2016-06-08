@@ -1,3 +1,3 @@
-![](assets/BillyDanze.svg)
+![](assets/BillyDanze.png)
 
 # Danze

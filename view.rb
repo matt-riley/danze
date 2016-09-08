@@ -40,8 +40,7 @@ class View < Calabash::IBase
   def assign_items(items)
     items.each do |item|
       case item['class']
-        # , 'Sky.SingleValueCollectionViewCell', 'Sky.SingleValueGlassBorderedCollectionViewCell'
-      when 'UIButton', 'UINavigationButton', 'UINavigationItemButtonView', 'UISegment', 'Sky.GradientButton'
+      when 'UIButton', 'UINavigationButton', 'UINavigationItemButtonView', 'UISegment'
         create_method(item, 'button') if item['visible'] == 1
       when 'UITextFieldLabel'
         create_method(item, 'text_field') if item['visible'] == 1

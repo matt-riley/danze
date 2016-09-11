@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 
-import DanzeImg from '../assets/BillyDanze.svg'
+// import DanzeImg from '../assets/BillyDanze.svg'
+import HeaderImg from './HeaderImg'
 import '../styles/normalize.css'
 import '../styles/app.css'
 
@@ -9,10 +10,7 @@ export default class App extends Component {
     return(
       <div id="wrapper">
         <header>
-          <img src={DanzeImg} />
-          <div className="title">
-            <h1>Danze</h1>
-          </div>
+          <HeaderImg />
         </header>
         <section>
           <h2>About</h2>

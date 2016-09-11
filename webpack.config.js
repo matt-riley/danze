@@ -72,6 +72,18 @@ var common = {
         rucksack,
       ];
     },
+    imageWebpackLoader: {
+      svgo: {
+        plugin: [
+          {
+            removeViewBox: true
+          },
+          {
+            removeEmptyAttrs: true
+          }
+        ]
+      }
+    },
   plugins: [
     new HtmlwebpackPlugin({
       title: 'Danze',

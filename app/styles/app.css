@@ -21,16 +21,18 @@ body,
 
 body {
   color: white;
+  text-align: center;
 }
 
 #wrapper {
-  width: 100vw;
+  width: 75vw;
   display: flex;
   min-height: 100vh;
   background-color: black;
   flex-direction: column;
   justify-content: flex-start;
   align-content: flex-start;
+  margin: 0 auto;
   header {
     flex: 0 auto;
     max-width: 100vw;
@@ -38,21 +40,34 @@ body {
     padding: 0;
     .title {
       font-family: 'urban_jungle';
-      fill: #95908d;
+      /* fill: #95908d; */
+      fill: white;
     }
   }
   section {
-    flex: 1;
-    border: 1px solid goldenrod;
+    flex: 2;
+    padding: 1rem;
     h2 {
       font-family: 'urban_jungle';
       margin: 0;
       padding: 0;
-      font-size: responsive 1rem 10rem;
+      font-size: responsive .5rem 5rem;
     }
     p {
       margin: 0;
       font-size: responsive .5rem 1rem;
+      text-align: justify;
+      margin-bottom: 1rem;
     }
+    .code {
+      text-align: justify;
+    }
+  }
+}
+
+a {
+  font-weight: bold;
+  &:visited {
+    color: white;
   }
 }

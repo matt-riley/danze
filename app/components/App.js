@@ -77,16 +77,14 @@ const LinksContent = () => (
   </div>
 )
 
-const ExampleClass = `
-  require_relative './view'
+const ExampleClass = `  require_relative './view'
   
   class SignIn < View
   # some methods
   end
 `
 
-const ExampleMethodsForClass = `
-  require_relative './view'
+const ExampleMethodsForClass = `  require_relative './view'
 
   class SignIn < View
     def login(email, password)

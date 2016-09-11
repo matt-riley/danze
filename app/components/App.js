@@ -43,11 +43,11 @@ const AboutContent = () => (
       I was listening to <a href="https://en.wikipedia.org/wiki/M.O.P.">M.O.P.</a> when writing it, hence the name.
     </p>
     <iframe 
-      width="560" 
+      width="100%" 
       height="315" 
       src="https://www.youtube.com/embed/7DoqinbB2gs" 
-      frameborder="0" 
-      allowfullscreen
+      frameBorder="0" 
+      allowFullScreen
       >
     </iframe>
     <p/>

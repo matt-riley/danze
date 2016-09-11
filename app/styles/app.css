@@ -67,7 +67,9 @@ body {
 
 a {
   font-weight: bold;
-  &:visited {
-    color: white;
-  }
+  color: white;
+}
+
+a:visited {
+  color: white;
 }

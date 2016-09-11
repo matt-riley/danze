@@ -13,7 +13,7 @@ class View < Calabash::IBase
   end
 
   def create_method(item, method_type)
-    name = item['label'].gsub(/\s/, '_').delete('!').downcase
+    name = item['label'].gsub(/\s/, '_').gsub(/[\W]/, '').downcase
     method_name = "#{name}_#{method_type}"
     method_checker(method_name)
     define_singleton_method(method_name) do

@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'calabash-cucumber'
 gem 'calabash-android'
+gem 'calabash-cucumber'
 gem 'rake'
 gem 'rubocop'

@@ -1,6 +1,10 @@
 require 'calabash-cucumber/ibase'
 
 class View < Calabash::IBase
+  BUTTON_CLASSES = File.readlines('./classes/buttons.txt').each { |line| line.delete!("\n") }
+
+  TEXT_FIELD_CLASSES = File.readlines('./classes/text_fields.txt').each { |line| line.delete!("\n") }
+
   def initialize
     assign_items(find_items)
   end
@@ -40,9 +44,9 @@ class View < Calabash::IBase
   def assign_items(items)
     items.each do |item|
       case item['class']
-      when 'UIButton', 'UINavigationButton', 'UINavigationItemButtonView', 'UISegment'
+      when *BUTTON_CLASSES
         create_method(item, 'button') if item['visible'] == 1
-      when 'UITextFieldLabel'
+      when *TEXT_FIELD_CLASSES
         create_method(item, 'text_field') if item['visible'] == 1
       else
         next

@@ -5,7 +5,7 @@ GEM
     ast (2.4.0)
     awesome_print (1.8.0)
     builder (3.2.3)
-    calabash-android (0.9.6)
+    calabash-android (0.9.7)
       awesome_print (~> 1.2)
       cucumber (~> 2.0)
       escape (~> 0.0.4)

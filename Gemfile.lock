@@ -66,7 +66,7 @@ GEM
       ruby-progressbar (~> 1.7)
       unicode-display_width (~> 1.0, >= 1.0.1)
     ruby-progressbar (1.8.1)
-    rubyzip (1.2.1)
+    rubyzip (1.2.3)
     run_loop (2.4.1)
       CFPropertyList (~> 2.2)
       awesome_print (~> 1.2)
